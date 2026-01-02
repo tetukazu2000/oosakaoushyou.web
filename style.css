@@ -80,7 +80,11 @@ a {
    FOOTER
 ===================== */
 footer {
-    background-color: yellow;
     text-align: center;
-    padding: 10px;
+    padding: 250px;
+    background-image: url("name.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 400px auto;
+    background-color: #fff000;
 }
