@@ -114,6 +114,10 @@ footer {
         padding: 120px 10px;
         background-size: 200px auto;
     }
+
+    .item{
+        display: none;
+    }
 }
 
 /* =====================
@@ -137,5 +141,9 @@ footer {
     footer {
         padding: 180px 20px;
         background-size: 250px auto;
+    }
+
+     .item{
+        display: none;
     }
 }
