@@ -33,7 +33,6 @@ a {
 
 .banner img {
     height: 48px;
-    width: auto;
     border-radius: 50%;
 }
 
@@ -43,48 +42,100 @@ a {
 }
 
 /* =====================
-   LOGO
-===================== */
-.logo {
-    width: 20px;
-    height: 20px;
-}
-
-/* =====================
    CONTEÚDO PRINCIPAL
 ===================== */
 .middle {
-    display: flex;              /* ALINHAMENTO HORIZONTAL */
+    display: flex;
     justify-content: center;
+    align-items: center;
     gap: 100px;
     padding: 20px;
 }
 
-/* itens dentro do middle */
-.middle .item{
+/* itens */
+.middle .item {
     width: 300px;
-    height: auto;
 }
 
-/* bloco do texto + imagem do mise */
+/* texto + mise */
 .middle .photo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
     font-size: 20px;
 }
 
+.middle img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
 
 /* =====================
    FOOTER
 ===================== */
 footer {
     text-align: center;
-    padding: 250px;
+    padding: 200px 20px;
     background-image: url("name.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 400px auto;
+    background-size: 300px auto;
     background-color: #fff000;
+}
+
+/* =====================
+   📱 CELULAR
+===================== */
+@media (max-width: 600px) {
+
+    .ousyou {
+        justify-content: center;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .banner h1 {
+        font-size: 28px;
+    }
+
+    .middle {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .middle .item {
+        width: 90%;
+    }
+
+    .middle .photo {
+        font-size: 16px;
+    }
+
+    footer {
+        padding: 120px 10px;
+        background-size: 200px auto;
+    }
+}
+
+/* =====================
+   📟 TABLET
+===================== */
+@media (min-width: 601px) and (max-width: 1024px) {
+
+    .banner h1 {
+        font-size: 36px;
+    }
+
+    .middle {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .middle .item {
+        width: 70%;
+    }
+
+    footer {
+        padding: 180px 20px;
+        background-size: 250px auto;
+    }
 }
