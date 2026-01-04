@@ -24,11 +24,18 @@ a {
     background-color: red;
 }
 
+
 .topo {
     display: flex;
     align-items: center;
     gap: 12px;
     padding-left: 20px;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 
 .banner img {
@@ -41,13 +48,21 @@ a {
     color: white;
 }
 
+.lang {
+    margin-left: auto;
+    color: white;
+    font-size: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
 /* =====================
    CONTEÚDO PRINCIPAL
 ===================== */
 .middle {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 100px;
     padding: 20px;
 }
@@ -67,7 +82,41 @@ a {
     width: 100%;
     height: auto;
     border-radius: 12px;
+    
 }
+
+
+.info{
+    text-align: center;
+   
+}
+
+.delivery{
+    padding: 50px;
+    
+}
+
+.mochi{
+    padding: 50px;
+}
+
+.info h2{
+     color: #fff000;
+    -webkit-text-stroke: black 1px;
+    font-size: 48px;
+}
+
+.info button{
+    background-color: #01c267;
+    width: 100px;
+    height:  30px;
+}
+
+.mapa-info-content{
+    text-align: center;
+}
+
+
 
 /* =====================
    FOOTER
@@ -87,14 +136,14 @@ footer {
 ===================== */
 @media (max-width: 600px) {
 
-    .ousyou {
-        justify-content: center;
-        height: auto;
-        padding: 10px 0;
+    .lang {   
+        font-size: 14px;
     }
 
+
     .banner h1 {
-        font-size: 28px;
+        
+        font-size: 24px;
     }
 
     .middle {
